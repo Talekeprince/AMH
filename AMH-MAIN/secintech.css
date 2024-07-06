@@ -1,0 +1,670 @@
+*{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0; 
+}
+body{
+    background-color: #fafafa;
+    color: #1f242d;
+}
+
+/*======================================= nav bar contents start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #1f242d;
+    color: red;
+    z-index: 5;
+    box-shadow: 0 0 10px black;
+    padding: 10px 20px;
+    top: 0;
+}
+.nav-header span img{
+    width:80px;
+    box-shadow: 0 0 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-header span img:hover{
+    width:70px;
+    box-shadow: 0 0 5px;
+    margin-right: 10px;
+
+}
+.nav-header{  
+    display: flex;
+    align-items: center;
+
+}
+
+/* ======================================nav menu start */
+.nav-menu{
+    padding: 5px;
+    cursor: pointer;
+}
+.nav-menu span{
+    border: none;
+    border-bottom: solid 2px grey;
+    width: 28px;
+    display: block;
+    height: 8px;
+}
+#short-line-menu-one{
+     border: none;
+    border-bottom: solid 2px grey;
+    width: 20px;
+    display: block;
+    height: 8px;
+    margin-left: 8px;
+}
+#short-line-menu{
+    border: none;
+    border-bottom: solid 2px grey;
+    width: 13px;
+    display: block;
+    height: 8px;
+    float: right;
+}
+#dot-menu-alt{
+    border: none;
+    border-bottom: solid 2px grey;
+    width: 4px;
+    height: 8px;
+    margin-left: 8px;
+}
+#menu-design{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*====================================== menu items*/
+.nav-menu-items{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #1f242d;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    top: -246px;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    transition: 0.7s ease-in-out;
+    transform: translateY(100%);
+}
+#times{
+    background-color: #1f242d;
+    border: none;
+    font-size: 40px;
+    color: grey;
+    cursor: pointer;
+}
+.nav-menu-items .nav-menu-links a{
+    display: block;
+    color: #1f242d;
+    font-weight: 600;
+    font-size: 18px;
+    /* border-bottom: solid 2px #1f242d; */
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(219, 219, 219);
+}
+/* =================menu bar contents end======================= */
+
+#welcm-hidden-el{
+    color: white;
+    background-color:red;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    top: 0px;
+    padding-bottom: 2px;
+}
+
+/* head background */
+#head-background{
+    background-image: url(../AMH-MAIN/picture/hieght\ mansion.jpg);
+    position: sticky;
+    width: 100%;
+    margin-top: 75px;
+    text-align: center;
+    background-position: center;
+    padding: 100px 50px;
+    background-size: cover;
+    color: #fafafa;
+}
+#head-background p{
+    font-size: larger;
+}
+#refresh-btn{
+    font-size: 23px;
+    margin: 10px;
+}
+#plus-btn{
+    font-size: 23px;
+    margin: 10px;
+    padding: 2px 9px;
+}
+/* sound */
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key{
+    font-size: 40px;
+    cursor: pointer;
+    color: grey;
+    display: inline-block;
+    margin: 10px;
+}
+/* about us */
+#container{
+    display: flex;
+    align-items: center;
+}
+#our-target,
+#our-vision{
+    width: 40%;
+    margin: 50px auto;
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    box-shadow: 0 0 10px #1f242d;
+    overflow: hidden;
+}
+@media screen and (max-width:700px) {
+    #container{
+    display: block;
+}
+#our-target,
+#our-vision{
+    width: 80%;
+    margin: 50px auto;
+    border: solid 1px #cacaca;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+}
+#target{
+    font-size: 25px;
+    margin-left: 10px;
+}
+#eye{
+    margin-left: 10px;
+    font-size: 50px;
+    color: rgb(231, 35, 0);
+}
+#target-style{
+    transition: 0.7s;
+    background-color: red;
+    color: white;
+    padding: 15px 0px;
+    border-bottom-right-radius:10px ;
+    border-bottom-left-radius: 10px;
+}
+#vision-style{
+    transition: 0.7s;
+    background-color: red;
+    color: white;
+    padding: 6px 0px;
+    border-bottom-right-radius:10px ;
+    border-bottom-left-radius: 10px;
+}
+#target-style:hover,
+#vision-style:hover{
+    position: relative;
+    background-color: #0ef;
+    color: #1f242d;
+    bottom: -120px;
+    transform: translateY(-50%);
+}
+#mis,
+#vis{
+    font-size: 25px;
+}
+#mis,
+#mis-para,
+#vis,
+#vis-para{
+    padding: 10px;
+}
+#vis-para,
+#mis-para{
+    margin-bottom: 0px;
+    font-size: larger;
+}
+/* about us ends */
+
+/* our services starts */
+#graphic-dev-link,
+#websites-dev-link,
+#app-dev-link{
+    display: block;
+}
+#our-services-heading{
+    font-size: 30px;
+    margin: 10px 10%;
+    border-bottom: solid 1px #1f242d;
+}
+#cloud,
+#graphics,
+#appliations,
+#websites{
+    color: #1f242d;
+    margin: 10px 10%;
+    background-color: #eeee;
+    transition: 0.7s;
+    box-shadow: 0 0 5px #1f242d;
+    padding: 5px;
+}
+#cloud:hover,
+#graphics:hover,
+#appliations:hover,
+#websites:hover{
+    background-color: #cacaca;
+}
+#cloud h3,
+#graphics h3,
+#appliations h3,
+#websites h3{
+    font-size: 25px;
+    background-color: #1f242d;
+    margin: 5px 0px;
+    padding: 6px;
+    color: #0ef;
+}
+#cloud a,
+#graphics a,
+#appliations a,
+#websites a{
+    color: #1f242d;
+}
+
+/* academy */
+#academy-heading{
+    margin: 10px 10%;
+    border-bottom: solid 1px #1f242d;
+    padding: 10px 5px;
+    background-color: #cacaca;
+}
+#academy-heading h3{
+    font-size: 25px;
+    padding: 10px 2px;
+    color: #1f242d;
+    border-bottom: solid 1px grey;
+}
+#apply-btn{
+    font-size: larger;
+    background-color: #0ef;
+    color: #1f242d;
+    border: none;
+    padding: 5px;
+    font-weight: 500;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #1f242d;
+    cursor: pointer;
+    display: block;
+    width: 300px;
+}
+/* Academy ends */
+/* Our services ends */
+
+
+
+
+/* footer start */
+footer{
+    color: #0ef;
+    background-color: #1f242d;
+    margin-top:40px ;
+    padding: 40px 8%;
+    border-top-right-radius: 40%;
+}
+footer h4{
+    font-size: larger;
+    margin: 10px 0px;
+    color: #fafafa;
+}
+div a li{
+    color: #0ef;
+    margin: 10px;
+}
+#contact-details{
+    display: block;
+    margin: 10px 30px;
+}
+#contact-details a{
+    color: #0ef;
+    display: block;
+    margin: 5px 0px;
+}
+#rate{
+    background-color: #fafafa;
+    text-align: center;
+    color: orange;
+    font-size:15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 25px black;
+    position: fixed;
+    bottom: 30px;
+    left: 100px;
+}
+#rated{
+    color: #1f242d;
+}
+.invisibleRate{
+    visibility: hidden;
+}
+#rate-us p{
+    font-size: 18px;
+    color: #1f242d;
+}
+#rate-us span{
+    font-size: 27px;
+    cursor: pointer;
+}
+#rate-btn{
+    margin: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+/* ====================  songs ============== */
+#ministers{
+    background-color:rgb(86, 0, 0);
+    padding: 50px;
+    border-bottom-left-radius: 150px;
+    color: #fafafa;
+    text-align: center;
+}
+.ministers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 10% ;
+    /* border-top-right-radius: 150px; */
+}
+#ceo{
+    width: 300px;
+}
+@media screen and (max-width:500px){
+    #ceo{
+    width: 250px;
+}
+}
+@media screen and (max-width:700px) {
+    .ministers{
+    display: block;
+    margin: 10px 10%;
+    /* border-top-right-radius: 150px; */
+}
+}
+#ministers h2{
+    margin: 10px;
+}
+#ministers p{
+    margin: 10px;
+}
+#ministers button{
+    color: #fafafa;
+    background-color: green;
+    padding: 7px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#download{
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+    /* background-color: ; */
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color:rgb(86, 0, 0);
+}
+#download h3{
+    text-align: center;
+    color: #fafafa;
+}
+#download-media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#download-media a{
+    margin: 10px;
+}
+#boomplay{
+    background-color: black;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+}
+#youtube{
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 8px;
+}
+#spotify{
+    color: #fafafa;
+    background-color: green;
+    padding: 10px;
+    border-radius: 7px;
+}
+#itune{
+    color: #fafafa;
+    background-color: black;
+    padding: 10px;
+    border-radius: 7px;
+}
+#amazon{
+    background-color: orange;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+}
+#google-play{
+    color: gold;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 9px;
+}
+#training{
+    margin: 10px 10%;
+    font-size: large;
+}
+#training h3{
+    font-size: 25px;
+}
+
+/* ================ MINISTERS ============= */
+
+#min-manfred{
+    text-align: center;
+}
+#min-manfred img{
+    width: 330px;
+    box-shadow:15px 10px 0  0 black;
+    border-radius: 10px;
+}
+#min-truth h3,
+#min-james h3,
+#ma-debi h3,
+#min-edwin h3,
+#min-manfred h3{
+    font-size:30px ;
+    margin: 20px 10%;
+}
+#min-truth,
+#ma-debi,
+#min-james,
+#min-edwin{
+    text-align: center;
+    
+}
+#min-truth img,
+#min-james img,
+#ma-debi img,
+#min-edwin img{
+    width: 330px;
+    box-shadow:15px 10px 0  0 black;
+    border-radius: 10px;
+}
+#our-ministers{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    padding: 20px 10%;
+}
+
+/* workers profiles */
+#james{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 10%;
+}
+#james img{
+    width: 120px;
+    border-radius:50% ;
+    margin: 20px;
+}
+#manfred{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+     flex-wrap: wrap;
+     margin: 10px 10%;
+}
+#min-manf{
+    border: solid 1px grey;
+    border-left: 0;
+     border-right: 0;
+}
+#manfred img{
+    width: 120px;
+    border-radius: 50%;
+    height: 130px;
+    margin: 20px;
+}
+#princewill img{
+    width: 120px;
+    border-radius: 50%;
+    margin: 20px;
+}
+#princewill{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 10px 10%;
+}
+#dedicated-workers{
+    font-size: 25px;
+    margin: 20px 8%;
+    color: red;
+}
+#twitter,
+#mail,
+#whatsapp{
+    width: 25px;
+    height: 25px;
+    margin: 0px 20px;
+    box-shadow: 0 0 10px black;
+    border-radius: 2px;
+}
+#facebook{
+    display: inline-block;
+    font-size: 30px;
+    border: solid 1px grey;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    color: rgb(0, 51, 255);
+    cursor: pointer;
+}
+#social-icons{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px 15%;
+    flex-wrap: wrap;
+}
+
+/* map image */
+#map{
+    width: 340px;
+}
+
+/* ------------------Newsletter============ */
+#newletter{
+    text-align: center;
+    color: #fafafa;
+    margin: 10px 10%;
+}
+form input{
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 2px grey;
+    background-color: #1f242d;
+    text-align: center;
+    margin-top: 15px;
+}
+form label{
+    display: block;
+}
+#subscribe{
+    color: white;
+    background-color: red;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    font-size: large;
+    padding: 10px;
+    width: 250px;
+}
+
+/* ===================== design================ */
+#design h1{
+    font-size: 45px;
+    color: rgb(207, 207, 207);
+    text-align: center;
+}
+#design h3{
+    color: rgb(207, 207, 207);
+    font-size: 25px;
+}
+#design{
+    text-align: center;
+}
+#download-now{
+    background-color: #0ef;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #0ef;
+    color: #1f242d;
+    font-weight: 600;
+}

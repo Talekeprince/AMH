@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+}
+
+body{
+     background-color: #1f242d;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* nav bar start */
+#capital-s{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: #1f242d;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid gray 1px;
+    z-index: 2;
+}
+
+/* nav menu start */
+#menu-nav-bar {
+    margin-top: 5px;
+    border: solid white 1px;
+    width: 20px;
+}
+#nav-menu {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.7s ease;
+}
+
+#nav-menu:hover{
+    opacity: 1;
+}
+/* nav menu end */
+
+/* menu start */
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transition: 1s ease;
+    background:#1f242d ;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: max-content;
+    overflow: scroll;
+    z-index: 4;
+    background: rgb(250, 243, 243);
+    /* padding: 1.7rem; */
+    transition: 1s ease;
+    transform: translateX(100%);
+}
+
+.showMenu{
+    transform: translateX(0);
+}
+
+.transparentBcg{
+    visibility: visible;
+}
+
+@media screen and (min-width: 500px) {
+    .menu{
+        width: 45vw;
+        min-height: 500px;
+    }
+}
+
+.close-menu{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.menu-item{
+    background-color:rgb(250, 243, 243) ;
+
+}
+
+#home-btn{
+    display: flex;
+    color: #1f242d;
+    font-weight: 600;
+    font-size: larger;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#home-btn:hover{
+    opacity: 0.7;
+}
+
+/* menu items */
+#about-icon{
+    border: solid 1px white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    margin-right:5px ;
+}
+
+#itemsreg,
+#items{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-weight: 500;
+    font-size:medium ;
+    line-height: 25px;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+#items-service,
+#itemsrate{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-weight: 500;
+    font-size:medium ;
+    line-height: 25px;
+    padding: 0.5rem;
+    z-index: 1;
+    border-bottom:solid 1px grey ;
+}
+
+
+#item-about{
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-size: larger;
+    line-height: 25px;
+    background-color: rgb(0, 76, 255);
+    color: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#item-about:hover,
+#itemsreg,
+#items-service:hover,
+#itemsrate:hover,
+#items:hover{
+    color: #1f242d;
+    opacity: 0.7;
+    background-color: rgb(214, 214, 214);
+}
+
+#times{
+    color:#1f242d;
+      padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 900;
+}
+
+#times:hover{
+    background-color: rgb(188, 188, 188);
+    opacity: 0.7;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* menu end */
+
+#back-to-home{
+    color: yellow;
+    border: solid 1px white;
+    padding: 2px;
+    cursor: pointer;
+    font-size: small;
+}
+#back-to-home:hover{
+    color: #1f242d;
+   background-color: #fff;
+}
+/* nav bar end */
+
+/* form{
+    overflow: auto;
+    padding: 25px;
+} */
+
+
+#country,
+#email,
+#password{
+    color: grey;
+    display: block;
+    margin-left: 10px;
+}
+
+#input-password,
+#input-email,
+#input-country{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid grey;
+    background-color: #1f242d;
+    padding-left: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+#male,
+#female{
+    color: rgb(111, 111, 111);
+}
+
+.secintech-nav-head h3{
+    color: yellow;
+    margin: 10px 0 0 ;
+    font-size: 20px;
+}
+
+#registration-heading{
+   background-image: url(../SECRETORY/picture/brains.JPG);
+   height: 35vh;
+   background-size: cover;
+   background-position: center;
+   background-attachment: scroll;
+}
+
+
+#continue-btn{
+    width: 90%;
+    padding: 8px;
+    background-color: yellow;
+    border: 0;
+    margin-left: 2%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#continue-btn:active{
+    margin-left: 2%;
+    width: 90%;
+    padding: 8px;
+    background-color: rgba(199, 199, 0, 0.881);
+    border: 0;
+}
+
+#terms-policy{
+    margin: 30px;
+    line-height: 20px;
+    font-size: small;
+}
+
+#terms-policy h3{
+    color: #0ef;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+
+#terms-policy button{
+    color: #1f242d;
+    background-color: #0ef;
+    border: 0;
+    margin: 15px;
+    font-weight: 700;
+    padding: 3px;
+    transition: 0.4s ease;
+}
+
+#terms-policy button:hover{
+    background-color: #fff;
+}
+
+#agreed-client{
+    display: inline-block;
+    margin: 10px;
+}
+
+li{
+    font-size: 14px;
+}
+
+#password-content{
+    color: #0ef;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#verify-create{
+    text-align: center;
+    /* background-image: url(../SECRETORY/picture/carear.jpg); */
+    height: 25vh;
+   padding-top: 80px;
+}
+
+#alredy-have-account{
+    display: inline-block;
+    color: yellow;
+    font-weight: 600;
+}
+
+#sign-in{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #0ef;
+    font-size: large;
+    background-color: #1f242d;
+    
+}
+
+#checkbox-content{
+    margin-left: 20px;
+}

@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color:  #1f242d;
+    margin: 0;
+}
+
+#login-head{
+    height: 18vh;
+    overflow: visible;
+    padding-bottom: 10px;
+}
+
+#login-head p{
+   padding-top: 100px;
+   margin-left: 10px;
+   color: #fff;
+}
+
+.btn {
+   margin-left: 10px;
+    width: 90%;
+    padding: 8px;
+    background-color: #0ef;
+    border: 0;
+}
+
+.btn:active{
+    margin-left: 10px;
+    width: 90%;
+    padding: 8px;
+    background-color: rgb(0, 138, 148);
+    border: 0;
+}
+
+
+
+
+.copy{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#input-password,
+#input-email{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid grey;
+    background-color: #1f242d;
+    margin-left: 10px;
+    display: block;
+    padding-left: 10px;
+    color: #fff;
+}
+
+#leb-password,
+#leb-email{
+    color: grey;
+    margin-left: 10px;
+}
+
+#new{
+    display: inline-block;
+    margin-left: 45px;
+    justify-content: center;
+    color: #fff;
+}
+
+.container{
+    margin-top: 30px;
+}
+
+#creat-account{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #0ef;
+    font-size: large;
+}
+
+#forget-passcode{
+    text-decoration: none;
+     color: #0ef;
+}
+
+#verify-content{
+    text-align: center;
+    padding-bottom: 350px;
+    padding-top: 30px;
+}
+
+.error {
+    color: red;
+    padding: 5px;
+    margin: 5px;
+    width: 85%;
+}
+
+/* nav bar start */
+#capital-s{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background-color: #1f242d;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid gray 1px;
+    z-index: 2;
+}
+
+/* nav menu start */
+#menu-nav-bar {
+    margin-top: 5px;
+    border: solid white 1px;
+    width: 20px;
+}
+#nav-menu {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.7s ease;
+}
+
+#nav-menu:hover{
+    opacity: 1;
+}
+/* nav menu end */
+
+/* menu start */
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transition: 1s ease;
+    background:#1f242d ;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: max-content;
+    overflow: scroll;
+    z-index: 4;
+    background: rgb(250, 243, 243);
+    /* padding: 1.7rem; */
+    transition: 1s ease;
+    transform: translateX(100%);
+}
+
+.showMenu{
+    transform: translateX(0);
+}
+
+.transparentBcg{
+    visibility: visible;
+}
+
+@media screen and (min-width: 500px) {
+    .menu{
+        width: 45vw;
+        min-height: 500px;
+    }
+}
+
+.close-menu{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.menu-item{
+    background-color:rgb(250, 243, 243) ;
+
+}
+
+#home-btn{
+    display: flex;
+    color: #1f242d;
+    font-weight: 600;
+    font-size: larger;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#home-btn:hover{
+    opacity: 0.7;
+}
+
+/* menu items */
+#about-icon{
+    border: solid 1px white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    margin-right:5px ;
+}
+
+#itemsreg,
+#items{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-weight: 500;
+    font-size:medium ;
+    line-height: 25px;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+#items-service,
+#itemsrate{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-weight: 500;
+    font-size:medium ;
+    line-height: 25px;
+    padding: 0.5rem;
+    z-index: 1;
+    border-bottom:solid 1px grey ;
+}
+
+
+#item-about{
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: #1f242d;
+    font-size: larger;
+    line-height: 25px;
+    background-color: rgb(0, 76, 255);
+    color: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#item-about:hover,
+#itemsreg,
+#items-service:hover,
+#itemsrate:hover,
+#items:hover{
+    color: #1f242d;
+    opacity: 0.7;
+    background-color: rgb(214, 214, 214);
+}
+
+#times{
+    color:#1f242d;
+      padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 900;
+}
+
+#times:hover{
+    background-color: rgb(188, 188, 188);
+    opacity: 0.7;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* menu end */
+
+#back-to-home{
+    color: yellow;
+    border: solid 1px white;
+    padding: 2px;
+    cursor: pointer;
+    font-size: small;
+}
+#back-to-home:hover{
+    color: #1f242d;
+   background-color: #fff;
+}
+
+.secintech-nav-head h3{
+    color: yellow;
+    font-weight: 700;
+}
+/* nav bar end */
+
